@@ -6,6 +6,8 @@
   --color-heading: #1b0760;
   --color-body: #918ca4;
 
+  --color-border: #ccc;
+
   --border-radius: 40px;
 }
 
@@ -82,6 +84,35 @@ a {
     font-size: 1.5rem;
   }
 }
+/*---Badges---*/
+.badge {
+  border-radius: var(--border-radius);
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+}
+.badge--small {
+  font-size: 1.6rem;
+}
+.badge--primary {
+  background: var(--color-primary);
+  color: white;
+}
+.badge--secondary {
+  background: var(--color-secondary);
+  color: white;
+}
+
+@media (mind-width: 768px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+  .badge--small {
+    font-size: 1.2rem;
+  }
+}
+
 /*---Buttons---*/
 .btn {
   border-radius: var(--border-radius);
@@ -138,4 +169,37 @@ a {
   .btn {
     font-size: 1.5rem;
   }
+}
+/*---Inputs---*/
+.input {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  color: var(--color-heading);
+  font-size: 2rem;
+  outline: 0;
+  padding: 1.5rem 3rem;
+}
+::placeholder {
+  text-transform: capitalize;
+  color: #cdcbd7;
+}
+@media (min-width: 768px) {
+  .input {
+    font-size: 1.5rem;
+  }
+}
+
+/*---Input Group---*/
+.input-group {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  display: flex;
+}
+
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+}
+.input-group .btn {
+  margin: 4px;
 }
