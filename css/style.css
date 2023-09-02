@@ -7,6 +7,7 @@
   --color-body: #918ca4;
 
   --color-border: #ccc;
+  --box-shadow: 0 0 20px 10px #382d2d;
 
   --border-radius: 30px;
 }
@@ -246,4 +247,22 @@ a {
 }
 .input-group .btn {
   margin: 4px;
+}
+/*---Cards---*/
+.card {
+  border-radius: 7px;
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+}
+.card__header,
+.card__body {
+  padding: 2rem 3rem;
+}
+.card--primary .card__header {
+  background-color: var(--color-primary);
+  color: white;
+}
+.card--secondary .card__header {
+  background-color: var(--color-secondary);
+  color: white;
 }
