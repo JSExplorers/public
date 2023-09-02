@@ -8,7 +8,7 @@
 
   --color-border: #ccc;
 
-  --border-radius: 40px;
+  --border-radius: 30px;
 }
 
 *,
@@ -242,6 +242,7 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
+  padding: 1.5rem 1rem;
 }
 .input-group .btn {
   margin: 4px;
