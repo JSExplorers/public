@@ -51,4 +51,22 @@
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
   }
+  .testimonial .quote,
+  .testimonial .quote__author {
+    font-size: 2.4rem;
+  }
+  .testimonial .quote {
+    margin-left: 6rem;
+  }
+  .callout .grid--1x2 {
+    grid-template-columns: 1fr auto;
+  }
+
+  .callout {
+    text-align: left;
+  }
+  .callout .btn {
+    justify-self: start;
+    margin: 2rem;
+  }
 }
