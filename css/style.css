@@ -477,6 +477,7 @@ a {
 }
 .block__header {
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 .block__heading {
@@ -600,16 +601,4 @@ a {
 
 .block-showcase__image {
   width: 100%;
-}
-
-@media (min-width: 768px) {
-  .block-showcase .grid {
-    grid-template-columns: 50% 50%;
-  }
-
-  .block-showcase__image {
-    width: auto;
-    max-width: 700px;
-    justify-self: end;
-  }
 }
