@@ -8,7 +8,7 @@
   --color-body-darker: #5c5577;
 
   --color-border: #ccc;
-  --box-shadow: 0 0 20px 10px #382d2d;
+  --box-shadow: 0 0 20px 10px #f3f3f3;
 
   --border-radius: 30px;
 }
@@ -186,6 +186,14 @@ a {
   background: #2bdefd;
 }
 
+.btn--heading {
+  background: var(--color-heading);
+  color: white;
+}
+.btn--heading:hover {
+  background: #2d1e63;
+}
+
 .btn--accent {
   background: var(--color-accent);
   color: white;
@@ -260,8 +268,8 @@ a {
 }
 /*------Cards------*/
 .card {
-  border-radius: 7px;
   box-shadow: var(--box-shadow);
+  border-radius: 7px;
   overflow: hidden;
 }
 .card__header,
@@ -279,8 +287,14 @@ a {
 .card--secondary .badge--secondary {
   background: #02cdf1;
 }
+.card--primary .badge--primary {
+  background: #126de4;
+}
 
 /*------Plans------*/
+.plan {
+  transition: all 0.2s ease-out;
+}
 .plan__name {
   color: white;
   margin: 0;
@@ -306,7 +320,9 @@ a {
 .plan .list__item {
   margin-bottom: 2rem;
 }
-
+.plan--popular {
+  transform: scale(1.1);
+}
 .plan--popular .card__header {
   position: relative;
 }
@@ -318,6 +334,14 @@ a {
   position: absolute;
   top: -5px;
   right: 5%;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan--popular:hover {
+  transform: scale(1.15);
 }
 
 @media (min-width: 768px) {
@@ -560,6 +584,12 @@ a {
   text-transform: lowercase;
 }
 
-@media (min-width: 768px) {
- 
+/* Plans Block */
+
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
