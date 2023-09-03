@@ -22,7 +22,7 @@
 html {
   font-size: 62.5%;
 }
-/*---Typograpgyi---*/
+/*------Typograpgyi------*/
 
 body {
   font-family: inter, Arial, Helvetica, sans-serif;
@@ -36,6 +36,7 @@ h3 {
   color: var(--color-heading);
   margin-bottom: 1rem;
   text-transform: capitalize;
+  line-height: 1.1;
 }
 h1 {
   font-size: 7rem;
@@ -53,7 +54,7 @@ p {
   max-width: 1140px;
   margin: 0 auto;
 }
-/*---Links---*/
+/*------Links------*/
 a {
   text-decoration: none;
 }
@@ -75,7 +76,7 @@ a {
 /* @media (min-width: 768px) {
  
 } */
-/*---Badges---*/
+/*------Badges------*/
 .badge {
   border-radius: var(--border-radius);
   font-size: 2rem;
@@ -104,7 +105,7 @@ a {
     font-size: 1.2rem;
   }
 } */
-/*---Lists---*/
+/*------Lists------*/
 
 .list {
   color: var(--color-heading);
@@ -126,7 +127,7 @@ a {
   margin-bottom: 1rem;
 }
 
-/*---Icons---*/
+/*------Icons------*/
 .icon {
   width: 40px;
   height: 40px;
@@ -155,7 +156,7 @@ a {
   height: 30px;
 }
 
-/*---Buttons---*/
+/*------Buttons------*/
 .btn {
   border-radius: var(--border-radius);
   border: 0;
@@ -217,7 +218,7 @@ a {
     font-size: 1.5rem;
   } */
 }
-/*---Inputs---*/
+/*------Inputs------*/
 .input {
   border-radius: var(--border-radius);
   border: 1px solid var(--color-border);
@@ -236,7 +237,7 @@ a {
   } */
 }
 
-/*---Input Group---*/
+/*------Input Group------*/
 .input-group {
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
@@ -251,7 +252,7 @@ a {
 .input-group .btn {
   margin: 4px;
 }
-/*---Cards---*/
+/*------Cards------*/
 .card {
   border-radius: 7px;
   box-shadow: var(--box-shadow);
@@ -273,7 +274,7 @@ a {
   background: #02cdf1;
 }
 
-/*---Plans---*/
+/*------Plans------*/
 .plan__name {
   color: white;
   margin: 0;
@@ -327,7 +328,7 @@ a {
     font-size: 1.7rem;
   }
 }
-/*---Media---*/
+/*------Media------*/
 .media {
   display: flex;
 }
@@ -340,7 +341,7 @@ a {
 .media__image {
   margin-top: 1rem;
 }
-/*---Quotes---*/
+/*------Quotes------*/
 .quote {
   font-size: 3rem;
   font-style: italic;
@@ -371,7 +372,7 @@ a {
   bottom: 10px;
 }
 
-/*---Grids---*/
+/*------Grids------*/
 .grid {
   display: grid;
 }
@@ -397,7 +398,7 @@ a {
   top: 3rem;
   right: -32px;
 }
-/*---CallOut---*/
+/*------CallOut------*/
 .callout {
   padding: 4rem;
   border-radius: 5px;
@@ -418,7 +419,7 @@ a {
 .callout__content {
   text-align: center;
 }
-/*---Collapsibles---*/
+/*------Collapsibles------*/
 
 .collapsible__content,
 .collapsible__icon {
@@ -451,7 +452,7 @@ a {
   opacity: 1;
   /* opacity: 1; */
 }
-/*---Blocks---*/
+/*------Blocks------*/
 .block {
   --padding-vetical: 6rem;
   padding: var(--padding-vetical) 2rem;
@@ -478,7 +479,7 @@ a {
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   padding-bottom: calc(var(--padding-vetical) + 6rem);
 }
-/*---Nav Bar---*/
+/*------Nav Bar------*/
 .nav {
   background: black;
   display: flex;
@@ -514,4 +515,22 @@ a {
 }
 .nav__brand {
   transform: translateY(5px);
+}
+/*------Hero------*/
+
+.hero {
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+.hero__image {
+  width: 100%;
+}
+@media (min-width: 768px) {
+ 
 }
