@@ -1,0 +1,64 @@
+<!-- dsds -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav collapsible">
+        <a class="nav__brand" href="/"><img src="/images/logo.svg" alt="" /></a>
+
+        <svg class="icon icon--white nav__toggler collapsible">
+          <use xlink:href="/images/sprite.svg#menu"></use>
+        </svg>
+
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="">hosting</a></li>
+          <li class="nav__item"><a href="">domain</a></li>
+          <li class="nav__item"><a href="">pricing</a></li>
+          <li class="nav__item"><a href="">home</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="block block--dark block--skewed-left hero">
+      <div class="container grid grid--1x2">
+        <header class="block__header hero__content">
+          <h1 class="block__heading">could hosting for pros</h1>
+          <p class="hero__tagline">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+            labore.
+          </p>
+          <a href="" class="btn btn--accent btn--streched">start now</a>
+        </header>
+
+        <img
+          class="hero__image"
+          sizes="(max-width: 570px) 100vw, 570px"
+          srcset="
+            /images/heroImages/banner_copy_zyodr4_c_scale,w_200.webp 200w,
+            /images/heroImages/banner_copy_zyodr4_c_scale,w_570.webp 570w
+          "
+          src="/images/heroImages/banner_copy_zyodr4_c_scale,w_570.webp"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
