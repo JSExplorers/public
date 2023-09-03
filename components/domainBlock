@@ -1,0 +1,25 @@
+<section class="block container block-domain">
+  <header class="block__header">
+    <h2>starting at $10/month</h2>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, ea!
+    </p>
+  </header>
+  <div class="input-group">
+    <input type="text" class="input" placeholder="search your domain" />
+    <button class="btn btn--accent">
+      <svg class="icon icon--white">
+        <use xlink:href="/images/sprite.svg#search"></use>
+      </svg>
+      search
+    </button>
+  </div>
+  <ul class="list block-domain__prices">
+    <li><span class="badge badge--secondary">.com $9</span></li>
+    <li>.com $9</li>
+    <li>.com $9</li>
+    <li>.com $9</li>
+    <li>.com $9</li>
+    <li>.com $9</li>
+  </ul>
+</section>
