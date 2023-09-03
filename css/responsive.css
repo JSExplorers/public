@@ -1,3 +1,9 @@
+@media (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (min-width: 768px) {
   body {
     font-size: 1.8rem;
@@ -41,5 +47,8 @@
   }
   .quote__org {
     font-size: 1.6rem;
+  }
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

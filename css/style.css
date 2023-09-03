@@ -123,12 +123,6 @@ a {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 768px) {
-  /* .list--tick .list__item {
-    padding-left: 0;
-  } */
-}
-
 /*---Icons---*/
 .icon {
   width: 40px;
@@ -146,6 +140,18 @@ a {
   justify-content: center;
   width: 64px;
 }
+
+.icon-container--accent {
+  background: var(--color-accent);
+}
+.icon--white {
+  fill: white;
+}
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
+
 /*---Buttons---*/
 .btn {
   border-radius: var(--border-radius);
@@ -361,15 +367,35 @@ a {
 .grid {
   display: grid;
 }
+/*Testimonials*/
 
-@media (min-width: 768px) {
-  .grid--1x2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.testimonial {
+  padding: 3rem;
+  /* margin-left: 20px;
+   */
+  padding: 3.5rem;
 }
 
-@media (min-width: 1024px) {
-  .grid--1x3 {
-    grid-template-columns: repeat(3, 1fr);
+.testimonial__image > img {
+  width: 100%;
+}
+
+.testimonial__image {
+  position: relative;
+}
+
+.testimonial__image .icon-container {
+  position: absolute;
+  top: 3rem;
+  right: -32px;
+}
+
+@media (min-width: 768px) {
+  .testimonial .quote,
+  .testimonial .quote__author {
+    font-size: 2.4rem;
+  }
+  .testimonial .quote {
+    margin-left: 6rem;
   }
 }
