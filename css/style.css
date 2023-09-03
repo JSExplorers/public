@@ -46,14 +46,21 @@ h2 {
 }
 h3 {
   font-size: 3rem;
+  font-weight: 500;
 }
 p {
   margin-top: 0;
+}
+
+::selection {
+  background: var(--color-primary);
+  color: white;
 }
 .container {
   max-width: 1140px;
   margin: 0 auto;
 }
+
 /*------Links------*/
 a {
   text-decoration: none;
@@ -73,9 +80,6 @@ a {
 .link-arrow:hover::after {
   margin-left: 10px;
 }
-/* @media (min-width: 768px) {
- 
-} */
 /*------Badges------*/
 .badge {
   border-radius: var(--border-radius);
@@ -96,18 +100,10 @@ a {
   color: white;
 }
 /* 
-@media (mind-width: 768px) {
-  .badge {
-    font-size: 1.5rem;
-  }
-  .badge--small {
-    font-size: 1.2rem;
-  }
-} */
+
 /*------Lists------*/
 
 .list {
-  color: var(--color-heading);
   list-style: none;
   padding-left: 0;
   text-transform: capitalize;
@@ -118,6 +114,7 @@ a {
 }
 
 .list--tick {
+  color: var(--color-heading);
   list-style-image: url(../images/tick.svg);
   padding-left: 3rem;
 }
@@ -227,11 +224,6 @@ a {
   vertical-align: middle;
 }
 
-@media (min-width: 768px) {
-  /* .btn {
-    font-size: 1.5rem;
-  } */
-}
 /*------Inputs------*/
 .input {
   border-radius: var(--border-radius);
@@ -244,11 +236,6 @@ a {
 ::placeholder {
   text-transform: capitalize;
   color: #cdcbd7;
-}
-@media (min-width: 768px) {
-  /* .input {
-    font-size: 1.5rem;
-  } */
 }
 
 /*------Input Group------*/
@@ -361,6 +348,7 @@ a {
 /*------Media------*/
 .media {
   display: flex;
+  margin-bottom: 4rem;
 }
 .media__title {
   margin-top: 0;
@@ -498,15 +486,17 @@ a {
   background: black;
   color: #7b858b;
 }
-.block--dark .block__heading {
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
   color: white;
 }
 .block--skewed-right {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
   padding-bottom: calc(var(--padding-vetical) + 6rem);
 }
 .block--skewed-left {
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   padding-bottom: calc(var(--padding-vetical) + 6rem);
 }
 /*------Nav Bar------*/
@@ -547,10 +537,6 @@ a {
   transform: translateY(5px);
 }
 /*------Hero------*/
-
-.hero {
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-}
 
 .hero__tagline {
   font-size: 2rem;
@@ -610,8 +596,20 @@ a {
   width: 100%;
 }
 
+/*------Showcase Block------*/
+
+.block-showcase__image {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
-  .feature:nth-of-type(even) .feature__content {
-    order: 2;
+  .block-showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
+
+  .block-showcase__image {
+    width: auto;
+    max-width: 700px;
+    justify-self: end;
   }
 }

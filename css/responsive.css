@@ -92,5 +92,7 @@
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
- 
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
 }
