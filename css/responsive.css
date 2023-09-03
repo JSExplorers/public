@@ -11,18 +11,22 @@
   h3 {
     font-size: 2.4rem;
   }
+
   .link-arrow {
     font-size: 1.5rem;
   }
+
   .badge {
     font-size: 1.5rem;
   }
   .badge--small {
     font-size: 1.2rem;
   }
+
   .list--tick .list__item {
     padding-left: 0;
   }
+
   .btn {
     font-size: 1.5rem;
   }
