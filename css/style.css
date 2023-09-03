@@ -34,6 +34,7 @@ h2,
 h3 {
   color: var(--color-heading);
   margin-bottom: 1rem;
+  text-transform: capitalize;
 }
 h1 {
   font-size: 7rem;
@@ -272,9 +273,6 @@ a {
   background: #02cdf1;
 }
 
-.card--primary .badge--primary {
-}
-
 /*---Plans---*/
 .plan__name {
   color: white;
@@ -328,4 +326,17 @@ a {
   .plan__description {
     font-size: 1.7rem;
   }
+}
+/*---Media---*/
+.media {
+  display: flex;
+}
+.media__title {
+  margin-top: 0;
+}
+.media__body {
+  margin: 0 2rem;
+}
+.media__image {
+  margin-top: 1rem;
 }
